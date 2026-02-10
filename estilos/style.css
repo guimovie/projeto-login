@@ -94,11 +94,11 @@ main {
     background-color: var(--cor3);
     font-size: 1em;
     width: calc(100% - 46.9px);
-    height: 90%;
+    height: 95%;
     border: none;
     border-radius: 4px;
     padding: 4px;
-    transform: translateY(-11px);
+    transform: translateY(-12px);
 }
 
 .campo input:focus-within {
