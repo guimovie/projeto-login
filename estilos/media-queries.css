@@ -52,4 +52,12 @@
         height: 100vh;
     }
 
+    #formulario > h1 {
+        font-size: 3em;
+    }
+
+    #formulario > p {
+        font-size: 1.2em;
+    }
+
 }

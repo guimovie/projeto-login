@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
@@ -15,21 +16,30 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e pode fazer as configurações do seu ambiente.</p>
-                <form action="" method="post">
-                    <p>
+                <form action="" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                        <input type="email" name="user" id="iuser" autocomplete="email" placeholder="Seu E-mail" required maxlength="30">
                         <label for="iuser">Usuario</label>
-                        <input type="email" name="user" id="iuser">
-                    </p>
-                    <p>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            vpn_key
+                        </span>
+                        <input type="password" name="pass" id="ipass" autocomplete="current-password" placeholder="Sua Senha" required minlength="8" maxlength="20">
                         <label for="ipass">Senha</label>
-                        <input type="password" name="pass" id="ipass">
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <input type="submit" value="Entrar">
-                    </p>
-                    <p>
-                        <input type="submit" value="Esqueci a Senha">
-                    </p>
+                        <a class="botao" href="#">
+                            Esqueci a senha 
+                            <span class="material-symbols-outlined">
+                                mail
+                            </span> 
+                        </a>
+                    </div>
                 </form>
             </div>
         </section>

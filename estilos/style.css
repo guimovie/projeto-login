@@ -7,8 +7,10 @@
 */
 
 :root {
+    --cor0: #2e6866;
     --cor1: #49a09d;
     --cor2: #5f2c82;
+    --cor3: #62d4d1;
     --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
@@ -65,8 +67,59 @@ main {
 
 #formulario > h1 {
     text-align: center;
+    padding-bottom: 10px;
 }
 
 #formulario > p {
-    text-align: justify;
+    font-size: 0.8em;
+}
+
+.campo {
+    background-color: var(--cor2);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo label {
+    display: none;
+}
+
+div > input[type=submit] {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: var(--cor1);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+div > input[type=submit]:hover {
+    background-color: var(--cor0) ;
+}
+
+div > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: var(--cor0);
+    border: 1px solid var(--cor1);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a.botao span.material-symbols-outlined {
+    font-size: 0.8em;
+}
+
+a.botao:hover {
+    background-color: var(--cor3);
 }
