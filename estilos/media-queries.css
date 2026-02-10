@@ -37,7 +37,7 @@
     
     #login {
         width: 900px;
-        height: 400px;
+        height: 350px;
     }
     
     #imagem {
@@ -53,11 +53,11 @@
     }
 
     #formulario > h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     #formulario > p {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
 }
